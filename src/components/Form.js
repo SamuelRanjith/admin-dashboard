@@ -112,7 +112,7 @@ const Form = ({ onSubmit, type, studentDetails }) => {
               </Grid>
 
               <Grid item xs={12}>
-                <text
+                <TextField
                   error={errors.email && touched.email ? true : false}
                   helperText={errors.email && touched.email ? errors.email : ""}
                   onChange={handleChange}
@@ -122,7 +122,7 @@ const Form = ({ onSubmit, type, studentDetails }) => {
                   label="Email Address"
                   onBlur={handleBlur}
                   name="email"
-                  />
+                />
               </Grid>
               <Grid item xs={12}>
                 <TextField
