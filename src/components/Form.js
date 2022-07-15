@@ -112,7 +112,7 @@ const Form = ({ onSubmit, type, studentDetails }) => {
               </Grid>
 
               <Grid item xs={12}>
-                <Text
+                <text
                   error={errors.email && touched.email ? true : false}
                   helperText={errors.email && touched.email ? errors.email : ""}
                   onChange={handleChange}
